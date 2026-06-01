@@ -1,3 +1,225 @@
+<!-- 병원 소개 | 유토펫 클리닉 -->
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Hospital Introduction - Uto Pet Clinic</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-container": "#68645b",
+                        "surface-container-highest": "#e3e2e0",
+                        "on-primary-fixed-variant": "#3c4b30",
+                        "primary-container": "#a7b896",
+                        "surface-container-low": "#f4f3f1",
+                        "primary-fixed": "#d7e8c4",
+                        "on-tertiary-fixed": "#2e150b",
+                        "tertiary-fixed-dim": "#ebbcad",
+                        "tertiary-fixed": "#ffdbcf",
+                        "surface-dim": "#dadad8",
+                        "on-tertiary-container": "#5d3d31",
+                        "secondary-container": "#e8e2d6",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed-variant": "#4a473e",
+                        "secondary-fixed": "#e8e2d6",
+                        "on-primary-fixed": "#121f08",
+                        "inverse-on-surface": "#f1f1ef",
+                        "on-tertiary": "#ffffff",
+                        "on-background": "#1a1c1b",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#444840",
+                        "tertiary-container": "#d5a899",
+                        "outline": "#75786f",
+                        "outline-variant": "#c5c8bd",
+                        "error-container": "#ffdad6",
+                        "on-secondary": "#ffffff",
+                        "surface-tint": "#546346",
+                        "secondary": "#625e55",
+                        "surface-container": "#efeeec",
+                        "tertiary": "#7a5649",
+                        "surface": "#faf9f7",
+                        "inverse-primary": "#bbcca9",
+                        "secondary-fixed-dim": "#cbc6ba",
+                        "error": "#ba1a1a",
+                        "surface-variant": "#e3e2e0",
+                        "primary-fixed-dim": "#bbcca9",
+                        "on-tertiary-fixed-variant": "#603f33",
+                        "on-primary-container": "#3a492e",
+                        "on-error": "#ffffff",
+                        "primary": "#546346",
+                        "on-error-container": "#93000a",
+                        "on-surface": "#1a1c1b",
+                        "on-secondary-fixed": "#1e1c14",
+                        "background": "#faf9f7",
+                        "surface-container-high": "#e9e8e6",
+                        "surface-bright": "#faf9f7",
+                        "inverse-surface": "#2f3130"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1200px",
+                        "margin-desktop": "40px",
+                        "gutter": "24px",
+                        "unit": "8px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Noto Sans KR"],
+                        "display-lg-mobile": ["Plus Jakarta Sans"],
+                        "body-md": ["Noto Sans KR"],
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "label-sm": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-sm": ["13px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased font-body-md overflow-x-hidden">
+<!-- Top Navigation -->
+<nav class="bg-surface/80 dark:bg-surface/80 backdrop-blur-md font-display-lg text-display-lg-mobile md:text-headline-md fixed top-0 w-full z-50 border-b border-outline-variant/30 transition-transform duration-200">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-4">
+<div class="font-display-lg text-headline-md text-primary dark:text-primary-fixed">힐링펫라이프</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-300 px-3 py-1 rounded" href="#">Highlights</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-300 px-3 py-1 rounded" href="#">Featured</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1" href="#">Community</a>
+</div>
+<button class="bg-primary text-on-primary px-4 py-2 rounded-lg font-label-sm text-label-sm hover:bg-surface-tint transition-colors hidden md:block">Visit Channel</button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="pt-24 pb-20 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Hero / Philosophy Section -->
+<section class="mb-24 mt-12 grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<div>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6">진료 철학</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">Compassion and Expertise for your pets.</p>
+<p class="font-body-md text-body-md text-on-surface mb-8">
+                    우토 펫 클리닉은 반려동물을 가족의 일원으로 생각하며, 최상의 의료 서비스와 따뜻한 마음으로 보살핍니다. 최신 의료 장비와 지속적인 연구를 바탕으로, 반려동물의 건강한 내일을 위해 최선을 다하고 있습니다.
+                </p>
+<div class="flex gap-4">
+<div class="bg-surface-container p-6 rounded-lg border border-outline-variant/30 flex flex-col items-center flex-1">
+<span class="material-symbols-outlined text-primary text-4xl mb-2" data-icon="favorite">favorite</span>
+<h3 class="font-headline-md text-body-lg text-primary text-center">진심 어린 진료</h3>
+</div>
+<div class="bg-surface-container p-6 rounded-lg border border-outline-variant/30 flex flex-col items-center flex-1">
+<span class="material-symbols-outlined text-primary text-4xl mb-2" data-icon="medical_services">medical_services</span>
+<h3 class="font-headline-md text-body-lg text-primary text-center">전문적인 의료진</h3>
+</div>
+</div>
+</div>
+<div class="relative rounded-2xl overflow-hidden aspect-video md:aspect-[4/3] bg-surface-container-high border border-outline-variant/30 shadow-sm">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A serene, minimalist modern pet hospital reception area with warm natural light pouring in through large windows. The walls are a soft, calming sage green and warm beige. There are sleek wooden accents and healthy green plants in corners. The atmosphere is professional, clean, yet incredibly welcoming and healing for both pets and owners." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAAxsVW7oTL8PXKBBKRyFb__d2I_vun_LHTn8sM8LcT1RRIVb9ibiUCJ53HQkYYOmtWpl8RTsl5pmJmcihx_ZjXLc2UHrW58FER_lf2K3CQCryL1BkqPFc_yzQkWaXcIGoiJgN2X_FdV1ajb8zhrId8-Qa0uR1t03RYM33RqW3yxmgSyGiGG3O5CERaeSW0ZpW3Q1CxsboZGCXIEY4gis0pH0WSibt7bxrT65h2yw0FUrMTly_b29NvxXLUwfBE4HbTkalK5Qrs8o_z');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent"></div>
+</div>
+</section>
+<!-- Medical Team Section -->
+<section class="mb-24">
+<div class="text-center mb-12">
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary">의료진 소개</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-4">따뜻한 마음과 전문성을 갖춘 우토 펫 클리닉의 의료진입니다.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-7 rounded-2xl overflow-hidden aspect-[1.5] border border-outline-variant/30 shadow-sm relative group">
+<img alt="Medical Team Member" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AP1WRLtxsJpIGzBIw576QVu2sHEWXc3kH4vvKqjtjYHX90dWyJfNlHMBiD6x9FksH_nmpOmjx4AUGkt4oLsKjD_vOdbUnoXCJGM-NvItE1m6roGMkbzoYG2Ev-RA1rWWy9AiNqSDl8T_dmfO6IPJ_Nd3859uzUdQpTIi5MPDxEQDdzRPzBaDfndqoBgwMd7bhjE74wW2u4raEL5xIQWTX_bgdHq2jucDpsEAi4m4R-CVWpnvOblkMKol2jvFME2k"/>
+</div>
+<div class="md:col-span-5 bg-surface-container-low p-8 md:p-12 rounded-2xl border border-outline-variant/30">
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">김우토 원장</h3>
+<p class="font-label-sm text-label-sm text-primary mb-6 uppercase tracking-wider">대표 원장 / 수의사</p>
+<ul class="font-body-md text-body-md text-on-surface-variant space-y-3 mb-8">
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary mr-2 text-sm mt-1" data-icon="check_circle">check_circle</span>
+                            서울대학교 수의과대학 졸업
+                        </li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary mr-2 text-sm mt-1" data-icon="check_circle">check_circle</span>
+                            전) 대한동물메디컬센터 내과 과장
+                        </li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary mr-2 text-sm mt-1" data-icon="check_circle">check_circle</span>
+                            한국수의내과학회 정회원
+                        </li>
+</ul>
+<p class="font-body-md text-body-md text-on-surface italic">"아이들의 눈빛만 봐도 무엇이 불편한지 알아차릴 수 있도록, 항상 진심을 다해 교감합니다. 보호자님과 아이가 모두 안심할 수 있는 진료를 약속드립니다."</p>
+</div>
+</div>
+</section>
+<!-- Facilities Section -->
+<section class="mb-12">
+<div class="text-center mb-12">
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary">시설 안내</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-4">최신 장비와 편안한 환경으로 최상의 의료 서비스를 제공합니다.</p>
+</div>
+<div class="rounded-2xl overflow-hidden aspect-[1.75] border border-outline-variant/30 shadow-sm relative mb-8">
+<img alt="Hospital Facilities" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLva-sSbexHn1BKNMRoCAOTOKxca4DYc2UJQTXuvygOAMHBjt3VQbCjxS-9crIKFGOzDo4NBW2H9vKFgwEH_p8mfMhKozvRiT3qrAPCKTugN3uESGE6yyESnp7HCjJNdCIwuCU613rD5WP6DrxJsrWNOBWGtHGHJeY_eU9A5joIJCke3-e6vI9ybJzQS8TUL3FaF5EMVL1bpocGewRorqkpeXgF4wuYM_-AAelGdrktbR44SyQWbrPUbqloi"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="bg-surface p-6 rounded-xl border border-outline-variant/30 hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl mb-4" data-icon="monitor_heart">monitor_heart</span>
+<h4 class="font-headline-md text-body-lg text-on-background mb-2">최신 영상진단 장비</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">정확한 진단을 위해 최신 디지털 X-ray 및 정밀 초음파 기기를 도입하여 운영하고 있습니다.</p>
+</div>
+<div class="bg-surface p-6 rounded-xl border border-outline-variant/30 hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl mb-4" data-icon="science">science</span>
+<h4 class="font-headline-md text-body-lg text-on-background mb-2">원내 임상병리실</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">신속하고 정확한 혈액검사 및 요검사를 통해 당일 진단과 처치가 가능합니다.</p>
+</div>
+<div class="bg-surface p-6 rounded-xl border border-outline-variant/30 hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl mb-4" data-icon="pets">pets</span>
+<h4 class="font-headline-md text-body-lg text-on-background mb-2">고양이 전용 대기실</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">예민한 고양이들을 위해 강아지와 분리된 조용하고 아늑한 전용 대기실을 마련하였습니다.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-high dark:bg-inverse-surface text-secondary dark:text-secondary-fixed font-body-md text-body-md w-full py-12 border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop opacity-80 hover:opacity-100">
+<div>
+<div class="font-display-lg text-headline-md text-primary mb-4">힐링펫라이프</div>
+<p>© 2024 Healing Pet Life. All rights reserved. Your companion for a better life.</p>
+</div>
+<div class="flex flex-wrap gap-4 md:justify-end items-center">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Contact Us</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">YouTube Policies</a>
+</div>
+</div>
+</footer>
+</body></html>
+
 <!-- 진료 안내 | 유토펫 클리닉 -->
 <!DOCTYPE html>
 
@@ -245,273 +467,6 @@
                 </p>
 </div>
 <div class="flex flex-wrap gap-x-8 gap-y-4 md:justify-end items-start font-body-md text-body-md">
-<a class="text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">About</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Contact Us</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">YouTube Policies</a>
-</div>
-</div>
-</footer>
-</body></html>
-
-<!-- 고객 센터 | 유토펫 클리닉 -->
-<!DOCTYPE html>
-
-<html lang="ko"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>고객센터 - 유토 동물병원</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "on-secondary-container": "#68645b",
-                        "surface-container-highest": "#e3e2e0",
-                        "on-primary-fixed-variant": "#3c4b30",
-                        "primary-container": "#a7b896",
-                        "surface-container-low": "#f4f3f1",
-                        "primary-fixed": "#d7e8c4",
-                        "on-tertiary-fixed": "#2e150b",
-                        "tertiary-fixed-dim": "#ebbcad",
-                        "tertiary-fixed": "#ffdbcf",
-                        "surface-dim": "#dadad8",
-                        "on-tertiary-container": "#5d3d31",
-                        "secondary-container": "#e8e2d6",
-                        "on-primary": "#ffffff",
-                        "on-secondary-fixed-variant": "#4a473e",
-                        "secondary-fixed": "#e8e2d6",
-                        "on-primary-fixed": "#121f08",
-                        "inverse-on-surface": "#f1f1ef",
-                        "on-tertiary": "#ffffff",
-                        "on-background": "#1a1c1b",
-                        "surface-container-lowest": "#ffffff",
-                        "on-surface-variant": "#444840",
-                        "tertiary-container": "#d5a899",
-                        "outline": "#75786f",
-                        "outline-variant": "#c5c8bd",
-                        "error-container": "#ffdad6",
-                        "on-secondary": "#ffffff",
-                        "surface-tint": "#546346",
-                        "secondary": "#625e55",
-                        "surface-container": "#efeeec",
-                        "tertiary": "#7a5649",
-                        "surface": "#faf9f7",
-                        "inverse-primary": "#bbcca9",
-                        "secondary-fixed-dim": "#cbc6ba",
-                        "error": "#ba1a1a",
-                        "surface-variant": "#e3e2e0",
-                        "primary-fixed-dim": "#bbcca9",
-                        "on-tertiary-fixed-variant": "#603f33",
-                        "on-primary-container": "#3a492e",
-                        "on-error": "#ffffff",
-                        "primary": "#546346",
-                        "on-error-container": "#93000a",
-                        "on-surface": "#1a1c1b",
-                        "on-secondary-fixed": "#1e1c14",
-                        "background": "#faf9f7",
-                        "surface-container-high": "#e9e8e6",
-                        "surface-bright": "#faf9f7",
-                        "inverse-surface": "#2f3130"
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    spacing: {
-                        "container-max": "1200px",
-                        "margin-desktop": "40px",
-                        "gutter": "24px",
-                        "unit": "8px",
-                        "margin-mobile": "16px"
-                    },
-                    fontFamily: {
-                        "body-lg": ["Noto Sans KR"],
-                        "display-lg-mobile": ["Plus Jakarta Sans"],
-                        "body-md": ["Noto Sans KR"],
-                        "display-lg": ["Plus Jakarta Sans"],
-                        "label-sm": ["Plus Jakarta Sans"],
-                        "headline-md": ["Plus Jakarta Sans"]
-                    },
-                    fontSize: {
-                        "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
-                        "display-lg-mobile": ["32px", { lineHeight: "1.2", fontWeight: "700" }],
-                        "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
-                        "display-lg": ["48px", { lineHeight: "1.2", letterSpacing: "-0.02em", fontWeight: "700" }],
-                        "label-sm": ["13px", { lineHeight: "1", letterSpacing: "0.05em", fontWeight: "600" }],
-                        "headline-md": ["24px", { lineHeight: "1.4", fontWeight: "600" }]
-                    }
-                }
-            }
-        }
-    </script>
-</head>
-<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
-<!-- TopNavBar -->
-<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 transition-transform duration-200">
-<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-4">
-<div class="font-display-lg text-display-lg-mobile md:text-headline-md text-primary dark:text-primary-fixed">
-                힐링펫라이프
-            </div>
-<nav class="hidden md:flex gap-6">
-<a class="text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-300 px-3 py-2 rounded" href="#">Highlights</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-300 px-3 py-2 rounded" href="#">Featured</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-300 px-3 py-2 rounded" href="#">Community</a>
-</nav>
-<button class="hidden md:block px-4 py-2 bg-primary text-on-primary rounded-lg font-label-sm hover:bg-surface-tint transition-colors">Visit Channel</button>
-<button class="md:hidden text-primary">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
-</button>
-</div>
-</header>
-<main class="flex-grow pt-24 pb-12 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
-<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-12 text-center text-primary">고객센터</h1>
-<!-- Business Hours & Contact -->
-<section class="grid grid-cols-1 md:grid-cols-2 gap-gutter mb-16">
-<div class="bg-surface-container-low rounded-xl p-8 border border-outline-variant/50">
-<div class="flex items-center gap-4 mb-6 text-primary">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">schedule</span>
-<h2 class="font-headline-md text-headline-md">진료 시간 안내</h2>
-</div>
-<div class="space-y-4 font-body-lg text-body-lg text-on-surface-variant">
-<div class="flex justify-between border-b border-outline-variant/30 pb-2">
-<span>평일</span>
-<span class="font-medium text-on-surface">09:00 - 19:00</span>
-</div>
-<div class="flex justify-between border-b border-outline-variant/30 pb-2">
-<span>토요일</span>
-<span class="font-medium text-on-surface">09:00 - 17:00</span>
-</div>
-<div class="flex justify-between border-b border-outline-variant/30 pb-2">
-<span>일요일/공휴일</span>
-<span class="font-medium text-error">휴진</span>
-</div>
-<div class="flex justify-between border-b border-outline-variant/30 pb-2">
-<span>점심시간</span>
-<span class="font-medium text-on-surface">13:00 - 14:00</span>
-</div>
-<div class="mt-6 bg-error-container text-on-error-container p-4 rounded-lg flex items-start gap-3">
-<span class="material-symbols-outlined text-error" style="font-variation-settings: 'FILL' 1;">warning</span>
-<div>
-<p class="font-bold mb-1">응급 진료 (24시간)</p>
-<p class="text-sm">야간 및 휴일 응급 환자는 전화 예약 후 내원 부탁드립니다.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="bg-surface-container-low rounded-xl p-8 border border-outline-variant/50">
-<div class="flex items-center gap-4 mb-6 text-primary">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">contact_support</span>
-<h2 class="font-headline-md text-headline-md">문의 및 예약</h2>
-</div>
-<div class="space-y-6 font-body-lg text-body-lg text-on-surface-variant">
-<div class="flex items-center gap-4">
-<div class="w-12 h-12 bg-primary-container text-on-primary-container rounded-full flex items-center justify-center">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">call</span>
-</div>
-<div>
-<p class="text-sm mb-1">대표 번호</p>
-<p class="font-display-lg text-headline-md text-on-surface">02-1234-5678</p>
-</div>
-</div>
-<div class="flex items-center gap-4">
-<div class="w-12 h-12 bg-primary-container text-on-primary-container rounded-full flex items-center justify-center">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">mail</span>
-</div>
-<div>
-<p class="text-sm mb-1">이메일 문의</p>
-<p class="font-medium text-on-surface">contact@utopet.com</p>
-</div>
-</div>
-<div class="pt-6 border-t border-outline-variant/30">
-<button class="w-full bg-primary text-on-primary font-label-sm py-4 rounded-lg hover:bg-surface-tint transition-colors flex items-center justify-center gap-2">
-<span class="material-symbols-outlined">calendar_month</span>
-                            온라인 예약하기
-                        </button>
-</div>
-</div>
-</div>
-</section>
-<!-- Location -->
-<section class="mb-16">
-<h2 class="font-headline-md text-headline-md mb-8 flex items-center gap-3 text-primary">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">location_on</span>
-                오시는 길
-            </h2>
-<div class="bg-surface-container-lowest border border-outline-variant/50 rounded-xl overflow-hidden">
-<div class="h-[400px] w-full bg-surface-variant relative" data-location="Seoul" style="">
-<img alt="지도" class="w-full h-full object-cover" data-alt="A clean, modern street map interface displaying a city area in a light mode aesthetic. The map features soft beige and sage green tones, with subtle grey roads and a prominent location pin indicating a destination. The overall look is professional and minimalist, suitable for a veterinary clinic's location page." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbFIMDhpkqmJ0xU6oTDIjjUkwNj1Fxr8ceJSfLrb7cNl1a0P1QoJO8YwhCD1kwn1SLOvbh50ikJNiTtok7mOkzIMoQdYP4LAunkkgcCRphzd33WIjvYKlp7oNHVzvVeX718SsGNN7Gv87jvWlmZjY4CTi1JFaZzqfeDzQTtbDsCedhMR-XfGjGXDw7VINAF8xfySpGQfwbZHHwk0ssMareQ4oKlBk6qUMMHEOmeEOlvkZ_GQPF5Y3-y3oj5waxNcMfrSNBpmql7faR"/>
-</div>
-<div class="p-8 grid grid-cols-1 md:grid-cols-2 gap-8">
-<div>
-<h3 class="font-bold text-on-surface mb-2 font-body-lg text-body-lg">주소</h3>
-<p class="text-on-surface-variant font-body-md text-body-md mb-4">서울특별시 강남구 테헤란로 123, 유토타워 2층</p>
-<h3 class="font-bold text-on-surface mb-2 font-body-lg text-body-lg">대중교통</h3>
-<ul class="text-on-surface-variant font-body-md text-body-md space-y-2 list-disc pl-5">
-<li>지하철 2호선 강남역 1번 출구 도보 5분</li>
-<li>버스 146, 341, 740 탑승 후 '강남역' 하차</li>
-</ul>
-</div>
-<div>
-<h3 class="font-bold text-on-surface mb-2 font-body-lg text-body-lg flex items-center gap-2">
-<span class="material-symbols-outlined text-primary">local_parking</span>
-                            주차 안내
-                        </h3>
-<p class="text-on-surface-variant font-body-md text-body-md mb-4">
-                            건물 지하 주차장을 이용하실 수 있습니다. (진료 고객 2시간 무료)<br/>
-                            만차 시 인근 공영 주차장을 이용해 주시기 바랍니다.
-                        </p>
-</div>
-</div>
-</div>
-</section>
-<!-- FAQ -->
-<section>
-<h2 class="font-headline-md text-headline-md mb-8 flex items-center gap-3 text-primary">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">quiz</span>
-                자주 묻는 질문
-            </h2>
-<div class="space-y-4">
-<!-- FAQ Item 1 -->
-<div class="border border-outline-variant/30 rounded-lg bg-surface-container-lowest overflow-hidden">
-<button class="w-full text-left px-6 py-4 flex justify-between items-center hover:bg-surface-container-low transition-colors focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden')">
-<span class="font-bold text-on-surface font-body-lg text-body-lg">Q. 초진 시 준비해야 할 것이 있나요?</span>
-<span class="material-symbols-outlined text-primary">expand_more</span>
-</button>
-<div class="hidden px-6 py-4 bg-surface border-t border-outline-variant/30 text-on-surface-variant font-body-md text-body-md">
-                        A. 이전 병원에서의 진료 기록이나 예방접종 수첩이 있다면 지참해 주시면 진료에 큰 도움이 됩니다. 또한 반려동물이 평소 먹는 사료나 간식 정보도 알려주시면 좋습니다.
-                    </div>
-</div>
-<!-- FAQ Item 2 -->
-<div class="border border-outline-variant/30 rounded-lg bg-surface-container-lowest overflow-hidden">
-<button class="w-full text-left px-6 py-4 flex justify-between items-center hover:bg-surface-container-low transition-colors focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden')">
-<span class="font-bold text-on-surface font-body-lg text-body-lg">Q. 건강검진은 예약해야 하나요?</span>
-<span class="material-symbols-outlined text-primary">expand_more</span>
-</button>
-<div class="hidden px-6 py-4 bg-surface border-t border-outline-variant/30 text-on-surface-variant font-body-md text-body-md">
-                        A. 네, 종합 건강검진은 금식 등 사전 준비가 필요하며 소요 시간이 길기 때문에 반드시 사전 예약이 필요합니다. 전화나 온라인을 통해 예약해 주시기 바랍니다.
-                    </div>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="w-full py-12 bg-surface-container-high dark:bg-inverse-surface border-t border-outline-variant mt-auto">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-<div>
-<div class="font-display-lg text-headline-md text-primary mb-4">힐링펫라이프</div>
-<p class="font-body-md text-body-md text-secondary dark:text-secondary-fixed mb-4">
-                    © 2024 Healing Pet Life. All rights reserved. Your companion for a better life.
-                </p>
-</div>
-<div class="flex flex-wrap gap-4 md:justify-end items-start font-body-md text-body-md">
 <a class="text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">About</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Contact Us</a>
@@ -796,15 +751,15 @@
 </footer>
 </body></html>
 
-<!-- 병원 소개 | 유토펫 클리닉 -->
+<!-- 고객 센터 | 유토펫 클리닉 -->
 <!DOCTYPE html>
 
-<html lang="en"><head>
+<html lang="ko"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Hospital Introduction - Uto Pet Clinic</title>
+<title>고객센터 - 유토 동물병원</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
@@ -812,7 +767,7 @@
             darkMode: "class",
             theme: {
                 extend: {
-                    "colors": {
+                    colors: {
                         "on-secondary-container": "#68645b",
                         "surface-container-highest": "#e3e2e0",
                         "on-primary-fixed-variant": "#3c4b30",
@@ -861,20 +816,20 @@
                         "surface-bright": "#faf9f7",
                         "inverse-surface": "#2f3130"
                     },
-                    "borderRadius": {
+                    borderRadius: {
                         "DEFAULT": "0.25rem",
                         "lg": "0.5rem",
                         "xl": "0.75rem",
                         "full": "9999px"
                     },
-                    "spacing": {
+                    spacing: {
                         "container-max": "1200px",
                         "margin-desktop": "40px",
                         "gutter": "24px",
                         "unit": "8px",
                         "margin-mobile": "16px"
                     },
-                    "fontFamily": {
+                    fontFamily: {
                         "body-lg": ["Noto Sans KR"],
                         "display-lg-mobile": ["Plus Jakarta Sans"],
                         "body-md": ["Noto Sans KR"],
@@ -882,519 +837,182 @@
                         "label-sm": ["Plus Jakarta Sans"],
                         "headline-md": ["Plus Jakarta Sans"]
                     },
-                    "fontSize": {
-                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                        "display-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }],
-                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                        "display-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
-                        "label-sm": ["13px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600" }],
-                        "headline-md": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }]
+                    fontSize: {
+                        "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+                        "display-lg-mobile": ["32px", { lineHeight: "1.2", fontWeight: "700" }],
+                        "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+                        "display-lg": ["48px", { lineHeight: "1.2", letterSpacing: "-0.02em", fontWeight: "700" }],
+                        "label-sm": ["13px", { lineHeight: "1", letterSpacing: "0.05em", fontWeight: "600" }],
+                        "headline-md": ["24px", { lineHeight: "1.4", fontWeight: "600" }]
                     }
                 }
             }
         }
     </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-    </style>
 </head>
-<body class="bg-background text-on-background antialiased font-body-md overflow-x-hidden">
-<!-- Top Navigation -->
-<nav class="bg-surface/80 dark:bg-surface/80 backdrop-blur-md font-display-lg text-display-lg-mobile md:text-headline-md fixed top-0 w-full z-50 border-b border-outline-variant/30 transition-transform duration-200">
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 transition-transform duration-200">
 <div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-4">
-<div class="font-display-lg text-headline-md text-primary dark:text-primary-fixed">힐링펫라이프</div>
-<div class="hidden md:flex gap-8 items-center">
-<a class="text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-300 px-3 py-1 rounded" href="#">Highlights</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-300 px-3 py-1 rounded" href="#">Featured</a>
-<a class="text-primary font-bold border-b-2 border-primary pb-1" href="#">Community</a>
-</div>
-<button class="bg-primary text-on-primary px-4 py-2 rounded-lg font-label-sm text-label-sm hover:bg-surface-tint transition-colors hidden md:block">Visit Channel</button>
+<div class="font-display-lg text-display-lg-mobile md:text-headline-md text-primary dark:text-primary-fixed">
+                힐링펫라이프
+            </div>
+<nav class="hidden md:flex gap-6">
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-300 px-3 py-2 rounded" href="#">Highlights</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-300 px-3 py-2 rounded" href="#">Featured</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-300 px-3 py-2 rounded" href="#">Community</a>
+</nav>
+<button class="hidden md:block px-4 py-2 bg-primary text-on-primary rounded-lg font-label-sm hover:bg-surface-tint transition-colors">Visit Channel</button>
 <button class="md:hidden text-primary">
-<span class="material-symbols-outlined" data-icon="menu">menu</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
 </button>
 </div>
-</nav>
-<!-- Main Content -->
-<main class="pt-24 pb-20 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-<!-- Hero / Philosophy Section -->
-<section class="mb-24 mt-12 grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+</header>
+<main class="flex-grow pt-24 pb-12 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-12 text-center text-primary">고객센터</h1>
+<!-- Business Hours & Contact -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-gutter mb-16">
+<div class="bg-surface-container-low rounded-xl p-8 border border-outline-variant/50">
+<div class="flex items-center gap-4 mb-6 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">schedule</span>
+<h2 class="font-headline-md text-headline-md">진료 시간 안내</h2>
+</div>
+<div class="space-y-4 font-body-lg text-body-lg text-on-surface-variant">
+<div class="flex justify-between border-b border-outline-variant/30 pb-2">
+<span>평일</span>
+<span class="font-medium text-on-surface">09:00 - 19:00</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant/30 pb-2">
+<span>토요일</span>
+<span class="font-medium text-on-surface">09:00 - 17:00</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant/30 pb-2">
+<span>일요일/공휴일</span>
+<span class="font-medium text-error">휴진</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant/30 pb-2">
+<span>점심시간</span>
+<span class="font-medium text-on-surface">13:00 - 14:00</span>
+</div>
+<div class="mt-6 bg-error-container text-on-error-container p-4 rounded-lg flex items-start gap-3">
+<span class="material-symbols-outlined text-error" style="font-variation-settings: 'FILL' 1;">warning</span>
 <div>
-<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6">진료 철학</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">Compassion and Expertise for your pets.</p>
-<p class="font-body-md text-body-md text-on-surface mb-8">
-                    우토 펫 클리닉은 반려동물을 가족의 일원으로 생각하며, 최상의 의료 서비스와 따뜻한 마음으로 보살핍니다. 최신 의료 장비와 지속적인 연구를 바탕으로, 반려동물의 건강한 내일을 위해 최선을 다하고 있습니다.
-                </p>
-<div class="flex gap-4">
-<div class="bg-surface-container p-6 rounded-lg border border-outline-variant/30 flex flex-col items-center flex-1">
-<span class="material-symbols-outlined text-primary text-4xl mb-2" data-icon="favorite">favorite</span>
-<h3 class="font-headline-md text-body-lg text-primary text-center">진심 어린 진료</h3>
-</div>
-<div class="bg-surface-container p-6 rounded-lg border border-outline-variant/30 flex flex-col items-center flex-1">
-<span class="material-symbols-outlined text-primary text-4xl mb-2" data-icon="medical_services">medical_services</span>
-<h3 class="font-headline-md text-body-lg text-primary text-center">전문적인 의료진</h3>
+<p class="font-bold mb-1">응급 진료 (24시간)</p>
+<p class="text-sm">야간 및 휴일 응급 환자는 전화 예약 후 내원 부탁드립니다.</p>
 </div>
 </div>
 </div>
-<div class="relative rounded-2xl overflow-hidden aspect-video md:aspect-[4/3] bg-surface-container-high border border-outline-variant/30 shadow-sm">
-<div class="absolute inset-0 bg-cover bg-center" data-alt="A serene, minimalist modern pet hospital reception area with warm natural light pouring in through large windows. The walls are a soft, calming sage green and warm beige. There are sleek wooden accents and healthy green plants in corners. The atmosphere is professional, clean, yet incredibly welcoming and healing for both pets and owners." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAAxsVW7oTL8PXKBBKRyFb__d2I_vun_LHTn8sM8LcT1RRIVb9ibiUCJ53HQkYYOmtWpl8RTsl5pmJmcihx_ZjXLc2UHrW58FER_lf2K3CQCryL1BkqPFc_yzQkWaXcIGoiJgN2X_FdV1ajb8zhrId8-Qa0uR1t03RYM33RqW3yxmgSyGiGG3O5CERaeSW0ZpW3Q1CxsboZGCXIEY4gis0pH0WSibt7bxrT65h2yw0FUrMTly_b29NvxXLUwfBE4HbTkalK5Qrs8o_z');"></div>
-<div class="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent"></div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-8 border border-outline-variant/50">
+<div class="flex items-center gap-4 mb-6 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">contact_support</span>
+<h2 class="font-headline-md text-headline-md">문의 및 예약</h2>
+</div>
+<div class="space-y-6 font-body-lg text-body-lg text-on-surface-variant">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-primary-container text-on-primary-container rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">call</span>
+</div>
+<div>
+<p class="text-sm mb-1">대표 번호</p>
+<p class="font-display-lg text-headline-md text-on-surface">02-1234-5678</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-primary-container text-on-primary-container rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">mail</span>
+</div>
+<div>
+<p class="text-sm mb-1">이메일 문의</p>
+<p class="font-medium text-on-surface">contact@utopet.com</p>
+</div>
+</div>
+<div class="pt-6 border-t border-outline-variant/30">
+<button class="w-full bg-primary text-on-primary font-label-sm py-4 rounded-lg hover:bg-surface-tint transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">calendar_month</span>
+                            온라인 예약하기
+                        </button>
+</div>
+</div>
 </div>
 </section>
-<!-- Medical Team Section -->
-<section class="mb-24">
-<div class="text-center mb-12">
-<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary">의료진 소개</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant mt-4">따뜻한 마음과 전문성을 갖춘 우토 펫 클리닉의 의료진입니다.</p>
+<!-- Location -->
+<section class="mb-16">
+<h2 class="font-headline-md text-headline-md mb-8 flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">location_on</span>
+                오시는 길
+            </h2>
+<div class="bg-surface-container-lowest border border-outline-variant/50 rounded-xl overflow-hidden">
+<div class="h-[400px] w-full bg-surface-variant relative" data-location="Seoul" style="">
+<img alt="지도" class="w-full h-full object-cover" data-alt="A clean, modern street map interface displaying a city area in a light mode aesthetic. The map features soft beige and sage green tones, with subtle grey roads and a prominent location pin indicating a destination. The overall look is professional and minimalist, suitable for a veterinary clinic's location page." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbFIMDhpkqmJ0xU6oTDIjjUkwNj1Fxr8ceJSfLrb7cNl1a0P1QoJO8YwhCD1kwn1SLOvbh50ikJNiTtok7mOkzIMoQdYP4LAunkkgcCRphzd33WIjvYKlp7oNHVzvVeX718SsGNN7Gv87jvWlmZjY4CTi1JFaZzqfeDzQTtbDsCedhMR-XfGjGXDw7VINAF8xfySpGQfwbZHHwk0ssMareQ4oKlBk6qUMMHEOmeEOlvkZ_GQPF5Y3-y3oj5waxNcMfrSNBpmql7faR"/>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
-<div class="md:col-span-7 rounded-2xl overflow-hidden aspect-[1.5] border border-outline-variant/30 shadow-sm relative group">
-<img alt="Medical Team Member" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AP1WRLtxsJpIGzBIw576QVu2sHEWXc3kH4vvKqjtjYHX90dWyJfNlHMBiD6x9FksH_nmpOmjx4AUGkt4oLsKjD_vOdbUnoXCJGM-NvItE1m6roGMkbzoYG2Ev-RA1rWWy9AiNqSDl8T_dmfO6IPJ_Nd3859uzUdQpTIi5MPDxEQDdzRPzBaDfndqoBgwMd7bhjE74wW2u4raEL5xIQWTX_bgdHq2jucDpsEAi4m4R-CVWpnvOblkMKol2jvFME2k"/>
-</div>
-<div class="md:col-span-5 bg-surface-container-low p-8 md:p-12 rounded-2xl border border-outline-variant/30">
-<h3 class="font-headline-md text-headline-md text-on-background mb-2">김우토 원장</h3>
-<p class="font-label-sm text-label-sm text-primary mb-6 uppercase tracking-wider">대표 원장 / 수의사</p>
-<ul class="font-body-md text-body-md text-on-surface-variant space-y-3 mb-8">
-<li class="flex items-start">
-<span class="material-symbols-outlined text-primary mr-2 text-sm mt-1" data-icon="check_circle">check_circle</span>
-                            서울대학교 수의과대학 졸업
-                        </li>
-<li class="flex items-start">
-<span class="material-symbols-outlined text-primary mr-2 text-sm mt-1" data-icon="check_circle">check_circle</span>
-                            전) 대한동물메디컬센터 내과 과장
-                        </li>
-<li class="flex items-start">
-<span class="material-symbols-outlined text-primary mr-2 text-sm mt-1" data-icon="check_circle">check_circle</span>
-                            한국수의내과학회 정회원
-                        </li>
+<div class="p-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+<div>
+<h3 class="font-bold text-on-surface mb-2 font-body-lg text-body-lg">주소</h3>
+<p class="text-on-surface-variant font-body-md text-body-md mb-4">서울특별시 강남구 테헤란로 123, 유토타워 2층</p>
+<h3 class="font-bold text-on-surface mb-2 font-body-lg text-body-lg">대중교통</h3>
+<ul class="text-on-surface-variant font-body-md text-body-md space-y-2 list-disc pl-5">
+<li>지하철 2호선 강남역 1번 출구 도보 5분</li>
+<li>버스 146, 341, 740 탑승 후 '강남역' 하차</li>
 </ul>
-<p class="font-body-md text-body-md text-on-surface italic">"아이들의 눈빛만 봐도 무엇이 불편한지 알아차릴 수 있도록, 항상 진심을 다해 교감합니다. 보호자님과 아이가 모두 안심할 수 있는 진료를 약속드립니다."</p>
+</div>
+<div>
+<h3 class="font-bold text-on-surface mb-2 font-body-lg text-body-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">local_parking</span>
+                            주차 안내
+                        </h3>
+<p class="text-on-surface-variant font-body-md text-body-md mb-4">
+                            건물 지하 주차장을 이용하실 수 있습니다. (진료 고객 2시간 무료)<br/>
+                            만차 시 인근 공영 주차장을 이용해 주시기 바랍니다.
+                        </p>
+</div>
 </div>
 </div>
 </section>
-<!-- Facilities Section -->
-<section class="mb-12">
-<div class="text-center mb-12">
-<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary">시설 안내</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant mt-4">최신 장비와 편안한 환경으로 최상의 의료 서비스를 제공합니다.</p>
+<!-- FAQ -->
+<section>
+<h2 class="font-headline-md text-headline-md mb-8 flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">quiz</span>
+                자주 묻는 질문
+            </h2>
+<div class="space-y-4">
+<!-- FAQ Item 1 -->
+<div class="border border-outline-variant/30 rounded-lg bg-surface-container-lowest overflow-hidden">
+<button class="w-full text-left px-6 py-4 flex justify-between items-center hover:bg-surface-container-low transition-colors focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden')">
+<span class="font-bold text-on-surface font-body-lg text-body-lg">Q. 초진 시 준비해야 할 것이 있나요?</span>
+<span class="material-symbols-outlined text-primary">expand_more</span>
+</button>
+<div class="hidden px-6 py-4 bg-surface border-t border-outline-variant/30 text-on-surface-variant font-body-md text-body-md">
+                        A. 이전 병원에서의 진료 기록이나 예방접종 수첩이 있다면 지참해 주시면 진료에 큰 도움이 됩니다. 또한 반려동물이 평소 먹는 사료나 간식 정보도 알려주시면 좋습니다.
+                    </div>
 </div>
-<div class="rounded-2xl overflow-hidden aspect-[1.75] border border-outline-variant/30 shadow-sm relative mb-8">
-<img alt="Hospital Facilities" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLva-sSbexHn1BKNMRoCAOTOKxca4DYc2UJQTXuvygOAMHBjt3VQbCjxS-9crIKFGOzDo4NBW2H9vKFgwEH_p8mfMhKozvRiT3qrAPCKTugN3uESGE6yyESnp7HCjJNdCIwuCU613rD5WP6DrxJsrWNOBWGtHGHJeY_eU9A5joIJCke3-e6vI9ybJzQS8TUL3FaF5EMVL1bpocGewRorqkpeXgF4wuYM_-AAelGdrktbR44SyQWbrPUbqloi"/>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-<div class="bg-surface p-6 rounded-xl border border-outline-variant/30 hover:border-primary transition-colors">
-<span class="material-symbols-outlined text-primary text-3xl mb-4" data-icon="monitor_heart">monitor_heart</span>
-<h4 class="font-headline-md text-body-lg text-on-background mb-2">최신 영상진단 장비</h4>
-<p class="font-body-md text-body-md text-on-surface-variant">정확한 진단을 위해 최신 디지털 X-ray 및 정밀 초음파 기기를 도입하여 운영하고 있습니다.</p>
-</div>
-<div class="bg-surface p-6 rounded-xl border border-outline-variant/30 hover:border-primary transition-colors">
-<span class="material-symbols-outlined text-primary text-3xl mb-4" data-icon="science">science</span>
-<h4 class="font-headline-md text-body-lg text-on-background mb-2">원내 임상병리실</h4>
-<p class="font-body-md text-body-md text-on-surface-variant">신속하고 정확한 혈액검사 및 요검사를 통해 당일 진단과 처치가 가능합니다.</p>
-</div>
-<div class="bg-surface p-6 rounded-xl border border-outline-variant/30 hover:border-primary transition-colors">
-<span class="material-symbols-outlined text-primary text-3xl mb-4" data-icon="pets">pets</span>
-<h4 class="font-headline-md text-body-lg text-on-background mb-2">고양이 전용 대기실</h4>
-<p class="font-body-md text-body-md text-on-surface-variant">예민한 고양이들을 위해 강아지와 분리된 조용하고 아늑한 전용 대기실을 마련하였습니다.</p>
+<!-- FAQ Item 2 -->
+<div class="border border-outline-variant/30 rounded-lg bg-surface-container-lowest overflow-hidden">
+<button class="w-full text-left px-6 py-4 flex justify-between items-center hover:bg-surface-container-low transition-colors focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden')">
+<span class="font-bold text-on-surface font-body-lg text-body-lg">Q. 건강검진은 예약해야 하나요?</span>
+<span class="material-symbols-outlined text-primary">expand_more</span>
+</button>
+<div class="hidden px-6 py-4 bg-surface border-t border-outline-variant/30 text-on-surface-variant font-body-md text-body-md">
+                        A. 네, 종합 건강검진은 금식 등 사전 준비가 필요하며 소요 시간이 길기 때문에 반드시 사전 예약이 필요합니다. 전화나 온라인을 통해 예약해 주시기 바랍니다.
+                    </div>
 </div>
 </div>
 </section>
 </main>
 <!-- Footer -->
-<footer class="bg-surface-container-high dark:bg-inverse-surface text-secondary dark:text-secondary-fixed font-body-md text-body-md w-full py-12 border-t border-outline-variant">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop opacity-80 hover:opacity-100">
+<footer class="w-full py-12 bg-surface-container-high dark:bg-inverse-surface border-t border-outline-variant mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
 <div>
 <div class="font-display-lg text-headline-md text-primary mb-4">힐링펫라이프</div>
-<p>© 2024 Healing Pet Life. All rights reserved. Your companion for a better life.</p>
-</div>
-<div class="flex flex-wrap gap-4 md:justify-end items-center">
-<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">About</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Contact Us</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">YouTube Policies</a>
-</div>
-</div>
-</footer>
-</body></html>
-
-<!-- 유토펫 클리닉 (한국형 베리에이션 1) -->
-<!DOCTYPE html><html lang="ko"><head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Uto Pet Clinic - 유토펫클리닉</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;family=Noto+Sans+KR:wght@400;500;700&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "tertiary": "#7a5649",
-                        "on-tertiary-container": "#5d3d31",
-                        "on-surface": "#1a1c1b",
-                        "inverse-surface": "#2f3130",
-                        "tertiary-fixed-dim": "#ebbcad",
-                        "surface-container-highest": "#e3e2e0",
-                        "surface-container-low": "#f4f3f1",
-                        "surface": "#faf9f7",
-                        "on-background": "#1a1c1b",
-                        "surface-container": "#efeeec",
-                        "primary-container": "#a7b896",
-                        "outline-variant": "#c5c8bd",
-                        "on-tertiary": "#ffffff",
-                        "on-surface-variant": "#444840",
-                        "inverse-on-surface": "#f1f1ef",
-                        "primary-fixed-dim": "#bbcca9",
-                        "secondary-fixed": "#e8e2d6",
-                        "background": "#faf9f7",
-                        "tertiary-fixed": "#ffdbcf",
-                        "tertiary-container": "#d5a899",
-                        "surface-tint": "#546346",
-                        "on-tertiary-fixed": "#2e150b",
-                        "on-secondary-container": "#68645b",
-                        "surface-container-lowest": "#ffffff",
-                        "secondary-fixed-dim": "#cbc6ba",
-                        "outline": "#75786f",
-                        "on-tertiary-fixed-variant": "#603f33",
-                        "on-error-container": "#93000a",
-                        "secondary-container": "#e8e2d6",
-                        "inverse-primary": "#bbcca9",
-                        "error-container": "#ffdad6",
-                        "surface-dim": "#dadad8",
-                        "error": "#ba1a1a",
-                        "surface-bright": "#faf9f7",
-                        "secondary": "#625e55",
-                        "surface-container-high": "#e9e8e6",
-                        "on-secondary-fixed": "#1e1c14",
-                        "on-error": "#ffffff",
-                        "on-primary-container": "#3a492e",
-                        "on-primary": "#ffffff",
-                        "on-primary-fixed-variant": "#3c4b30",
-                        "on-primary-fixed": "#121f08",
-                        "primary-fixed": "#d7e8c4",
-                        "on-secondary-fixed-variant": "#4a473e",
-                        "on-secondary": "#ffffff",
-                        "surface-variant": "#e3e2e0",
-                        "primary": "#546346"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "margin-desktop": "40px",
-                        "unit": "8px",
-                        "container-max": "1200px",
-                        "margin-mobile": "16px",
-                        "gutter": "24px"
-                    },
-                    "fontFamily": {
-                        "display-lg": ["Plus Jakarta Sans"],
-                        "headline-md": ["Plus Jakarta Sans"],
-                        "label-sm": ["Plus Jakarta Sans"],
-                        "body-md": ["Noto Sans KR"],
-                        "body-lg": ["Noto Sans KR"],
-                        "display-lg-mobile": ["Plus Jakarta Sans"]
-                    },
-                    "fontSize": {
-                        "display-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
-                        "headline-md": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }],
-                        "label-sm": ["13px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600" }],
-                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                        "display-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }]
-                    }
-                }
-            }
-        }
-    </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-    </style>
-</head>
-<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden">
-<!-- Top Navigation Bar -->
-<header class="bg-surface border-b border-outline-variant/30 relative z-50">
-<div class="max-w-[1400px] mx-auto px-4">
-<div class="flex justify-between items-center h-[90px]">
-<a class="flex items-center gap-2" href="#">
-<span class="text-primary font-display-lg text-[28px] font-bold tracking-tighter">UTO PET Clinic</span>
-<span class="text-on-surface-variant text-xs hidden md:block">반려동물의 건강을 위해, 유토펫클리닉</span>
-</a>
-<div class="flex items-center gap-2">
-<a class="w-8 h-8 rounded-full bg-[#1877F2] text-white flex items-center justify-center hover:opacity-80 transition-opacity" href="#"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg></a>
-<a class="w-8 h-8 rounded-full bg-[#E4405F] text-white flex items-center justify-center hover:opacity-80 transition-opacity" href="#"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"></path></svg></a>
-<a class="w-8 h-8 rounded-full bg-[#1DA1F2] text-white flex items-center justify-center hover:opacity-80 transition-opacity" href="#"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"></path></svg></a>
-</div>
-</div>
-<nav class="border-t border-outline-variant/20 hidden md:flex justify-center h-[60px]">
-<a class="px-8 flex items-center text-on-surface hover:text-primary transition-colors text-[15px] font-medium" href="#">병원소개</a>
-<a class="px-8 flex items-center text-on-surface hover:text-primary transition-colors text-[15px] font-medium" href="#">진료안내</a>
-<a class="px-8 flex items-center text-on-surface hover:text-primary transition-colors text-[15px] font-medium" href="#">강아지클리닉</a>
-<a class="px-8 flex items-center text-on-surface hover:text-primary transition-colors text-[15px] font-medium" href="#">고양이클리닉</a>
-<a class="px-8 flex items-center text-on-surface hover:text-primary transition-colors text-[15px] font-medium" href="#">수술센터</a>
-<a class="px-8 flex items-center text-on-surface hover:text-primary transition-colors text-[15px] font-medium" href="#">특화클리닉</a>
-<a class="px-8 flex items-center text-on-surface hover:text-primary transition-colors text-[15px] font-medium" href="#">고객센터</a>
-<a class="px-8 flex items-center text-on-surface hover:text-primary transition-colors text-[15px] font-medium" href="#">지점안내</a>
-</nav>
-</div>
-</header>
-<main>
-<!-- Hero Section: Split Dual Focus -->
-<section class="w-full flex flex-col md:flex-row h-[700px]">
-<!-- Dog Clinic -->
-<div class="w-full md:w-1/2 relative group overflow-hidden bg-[#eaf4df] flex items-center justify-center p-8">
-<img alt="A cute white fluffy dog with a blue toy." class="absolute inset-0 w-full h-full object-cover object-left opacity-90 transition-transform duration-700 ease-in-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyzY0aLos-gFWiVV5wp9F3yZpUVR1MF7YZEF9iOevWgQPYILWx_Sw9TSD3ieV5qUUW1DJit9g05-MstLOZVFiYrmNovilzqEJCf9_uerxYwPIU0VYKG-g_AwM59dDtWluw46IuvL6Tpp3-pefqn2ninlEra4hIZfHXP4TKRIkDC9aXL3eQRrmp30D-zY87G7vFWkfDRGBj2IqCGqMhWp6CfYWq5lEWWQxbdeY_aw3gu4acBWFZBMC-1AtXGFDbIe1koqiEjQ8XDgdu">
-<div class="absolute inset-0 bg-gradient-to-t from-white/60 to-transparent mix-blend-overlay"></div>
-<div class="relative z-10 text-center flex flex-col items-center">
-<span class="material-symbols-outlined text-white text-[40px] mb-2 drop-shadow-md" data-weight="fill" style="font-variation-settings: 'FILL' 1;">pets</span>
-<h2 class="font-display-lg text-[64px] text-white leading-none mb-4 drop-shadow-md tracking-tighter">DOG<br>CLINIC</h2>
-<p class="font-body-lg text-lg text-white mb-2 drop-shadow-md font-bold">유토펫클리닉<br>강아지 특화의료센터</p>
-<p class="text-white/90 text-sm mb-8 drop-shadow-md max-w-[250px] mx-auto">사랑하는 반려견을 위한 건강한 선택, 슬개골탈구 / 증상회복 특화의료센터</p>
-<button class="bg-[#a7b896]/90 backdrop-blur-sm text-white px-8 py-3 rounded-full text-sm font-medium hover:bg-[#a7b896] transition-all duration-300 shadow-sm border border-white/20">
-                        도그클리닉 바로가기
-                    </button>
-</div>
-</div>
-<!-- Cat Clinic -->
-<div class="w-full md:w-1/2 relative group overflow-hidden bg-[#f4e4df] flex items-center justify-center p-8">
-<img alt="A beautiful tabby cat looking directly at camera." class="absolute inset-0 w-full h-full object-cover object-right opacity-90 transition-transform duration-700 ease-in-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyzY0aLos-gFWiVV5wp9F3yZpUVR1MF7YZEF9iOevWgQPYILWx_Sw9TSD3ieV5qUUW1DJit9g05-MstLOZVFiYrmNovilzqEJCf9_uerxYwPIU0VYKG-g_AwM59dDtWluw46IuvL6Tpp3-pefqn2ninlEra4hIZfHXP4TKRIkDC9aXL3eQRrmp30D-zY87G7vFWkfDRGBj2IqCGqMhWp6CfYWq5lEWWQxbdeY_aw3gu4acBWFZBMC-1AtXGFDbIe1koqiEjQ8XDgdu">
-<div class="absolute inset-0 bg-gradient-to-t from-white/60 to-transparent mix-blend-overlay"></div>
-<div class="relative z-10 text-center flex flex-col items-center">
-<span class="material-symbols-outlined text-white text-[40px] mb-2 drop-shadow-md" data-weight="fill" style="font-variation-settings: 'FILL' 1;">pest_control</span>
-<h2 class="font-display-lg text-[64px] text-white leading-none mb-4 drop-shadow-md tracking-tighter">CAT<br>CLINIC</h2>
-<p class="font-body-lg text-lg text-white mb-2 drop-shadow-md font-bold">유토펫클리닉<br>고양이 특화의료센터</p>
-<p class="text-white/90 text-sm mb-8 drop-shadow-md max-w-[250px] mx-auto">고양이를 위한 편안하고 쾌적한 진료, 오직 고양이의 건강만을 연구한 특화센터</p>
-<button class="bg-[#d5a899]/90 backdrop-blur-sm text-white px-8 py-3 rounded-full text-sm font-medium hover:bg-[#d5a899] transition-all duration-300 shadow-sm border border-white/20">
-                        캣클리닉 바로가기
-                    </button>
-</div>
-</div>
-</section>
-<!-- Specialized Services Grid -->
-<section class="max-w-[1200px] mx-auto px-4 py-20">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-0">
-<!-- Neutering -->
-<div class="bg-[#a7b896] p-12 flex flex-col items-center text-center text-white group cursor-pointer hover:bg-[#8da378] transition-colors duration-300">
-<span class="material-symbols-outlined text-[48px] mb-6">local_hospital</span>
-<h3 class="text-2xl font-bold mb-4">중성화수술</h3>
-<p class="text-white/90 text-[15px] mb-8 leading-relaxed">
-                        중성화 수술은 반려동물의 무분별한 번식 방지는 물론 생식기계 질환예방, 호르몬 질환 예방, 성격행동교정 등의 목적으로 진행됩니다.
-                    </p>
-<span class="inline-block border border-white/40 rounded-full px-6 py-1 text-sm group-hover:bg-white group-hover:text-[#a7b896] transition-colors">more</span>
-</div>
-<!-- Heart Disease -->
-<div class="bg-[#d5a899] p-12 flex flex-col items-center text-center text-white group cursor-pointer hover:bg-[#c6907d] transition-colors duration-300">
-<span class="material-symbols-outlined text-[48px] mb-6">ecg_heart</span>
-<h3 class="text-2xl font-bold mb-4">심장질환클리닉</h3>
-<p class="text-white/90 text-[15px] mb-8 leading-relaxed">
-                        반려견, 반려묘의 응급상황에 대처가능한 심장전문 클리닉입니다. 풍부한 수술경험으로 반려동물의 건강을 관리합니다.
-                    </p>
-<span class="inline-block border border-white/40 rounded-full px-6 py-1 text-sm group-hover:bg-white group-hover:text-[#d5a899] transition-colors">more</span>
-</div>
-<!-- Health Checkup -->
-<div class="bg-[#9c948e] p-12 flex flex-col items-center text-center text-white group cursor-pointer hover:bg-[#827a74] transition-colors duration-300">
-<span class="material-symbols-outlined text-[48px] mb-6">stethoscope</span>
-<h3 class="text-2xl font-bold mb-4">건강검진센터</h3>
-<p class="text-white/90 text-[15px] mb-8 leading-relaxed">
-                        정기적인 건강검진은 반려동물의 행복한 생활을 위한 첫번째 노력입니다. 최신 진료장비와 숙련된 기술로 반려동물의 질병을 지켜주세요.
-                    </p>
-<span class="inline-block border border-white/40 rounded-full px-6 py-1 text-sm group-hover:bg-white group-hover:text-[#9c948e] transition-colors">more</span>
-</div>
-</div>
-</section>
-<!-- Core Philosophy Banner -->
-<section class="bg-[#f8f8f8] py-20 relative overflow-hidden">
-<div class="max-w-[1200px] mx-auto px-4 flex flex-col items-center text-center relative z-10">
-<h2 class="text-[28px] md:text-[32px] text-[#333] mb-2 font-medium tracking-tight">
-                    반려동물을 사랑하는 마음, 그 마음을 바탕으로 진료합니다.
-                </h2>
-<h3 class="text-[28px] md:text-[32px] text-[#111] font-bold mb-8 tracking-tight">
-                    반려동물의 건강하고 행복한 삶을 위한 유토클리닉
-                </h3>
-<p class="text-[#666] text-sm mb-16">
-                    유토펫클리닉은 전문의료진이 반려동물을 사랑하는 마음을 바탕으로 정성을 다해 진료하고 있습니다.<br>오직 반려동물의 건강만을 연구해온 전문의료진의 특별한 클리닉을 경험하세요.
+<p class="font-body-md text-body-md text-secondary dark:text-secondary-fixed mb-4">
+                    © 2024 Healing Pet Life. All rights reserved. Your companion for a better life.
                 </p>
-<div class="w-full rounded-2xl overflow-hidden aspect-[21/9] relative shadow-sm">
-<img alt="Multiple cute pets" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmGHLy8EJt3P3FJHja01KYuA7PmRf8SWzCtyepaXR31-zNBKCdcJB8licPa1higfU1_EgNwisymhgNZtm3_jikcY0kc1sKtZRLElEq1QVzfvKWnZNXm3XFjZw6JMBhbFy8VxEQlV3rusG1CeMVa1tn50UF5wrTUsyPeSXVs8k8IwW8ByskKiyqH2ikmVHYOM0Ko_wvvEF4DbU6EdfzzcElXhD4JJmUHHzcVX92Lj8O-Nyq4cCTZvLgRG5tpbKJIIDZYVF3i0kP6-8t">
 </div>
-</div>
-</section>
-<!-- Notice / FAQ / Community -->
-<section class="max-w-[1200px] mx-auto px-4 py-20 border-b border-gray-200">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-<!-- NOTICE -->
-<div>
-<div class="flex justify-between items-center mb-6 pb-4 border-b border-gray-200">
-<h3 class="text-xl font-bold text-[#a7b896]">NOTICE</h3>
-<button class="text-gray-400 hover:text-gray-600"><span class="material-symbols-outlined text-sm">add</span></button>
-</div>
-<ul class="space-y-4">
-<li class="flex justify-between items-center text-[15px]">
-<a class="text-gray-700 hover:text-[#a7b896] truncate pr-4" href="#">유토펫클리닉 운영시간 변경을 알려드립니다.</a>
-<span class="text-gray-400 text-sm shrink-0">04.05</span>
-</li>
-<li class="flex justify-between items-center text-[15px]">
-<a class="text-gray-700 hover:text-[#a7b896] truncate pr-4" href="#">예약시 확인하실 점 안내입니다.</a>
-<span class="text-gray-400 text-sm shrink-0">04.02</span>
-</li>
-<li class="flex justify-between items-center text-[15px]">
-<a class="text-gray-700 hover:text-[#a7b896] truncate pr-4" href="#">중성화센터 리모델링 공사로 인한 휴진안내</a>
-<span class="text-gray-400 text-sm shrink-0">04.01</span>
-</li>
-<li class="flex justify-between items-center text-[15px]">
-<a class="text-gray-700 hover:text-[#a7b896] truncate pr-4" href="#">유토펫클리닉 본사 이전안내 소식입니다.</a>
-<span class="text-gray-400 text-sm shrink-0">03.21</span>
-</li>
-</ul>
-</div>
-<!-- FAQ -->
-<div>
-<div class="flex justify-between items-center mb-6 pb-4 border-b border-gray-200">
-<h3 class="text-xl font-bold text-[#d5a899]">FAQ</h3>
-<button class="text-gray-400 hover:text-gray-600"><span class="material-symbols-outlined text-sm">add</span></button>
-</div>
-<ul class="space-y-4">
-<li class="flex justify-between items-center text-[15px]">
-<a class="text-gray-700 hover:text-[#d5a899] truncate pr-4" href="#">고양이 중성화 수술은 언제쯤하는게 적당한가요?</a>
-<span class="text-gray-400 text-sm shrink-0">04.05</span>
-</li>
-<li class="flex justify-between items-center text-[15px]">
-<a class="text-gray-700 hover:text-[#d5a899] truncate pr-4" href="#">슬개골탈구의 의심증상을 알려주세요</a>
-<span class="text-gray-400 text-sm shrink-0">04.02</span>
-</li>
-<li class="flex justify-between items-center text-[15px]">
-<a class="text-gray-700 hover:text-[#d5a899] truncate pr-4" href="#">병원 방문 전 예약이 필요한가요?</a>
-<span class="text-gray-400 text-sm shrink-0">04.01</span>
-</li>
-<li class="flex justify-between items-center text-[15px]">
-<a class="text-gray-700 hover:text-[#d5a899] truncate pr-4" href="#">수술 후 넥카라 착용 기간을 알고 싶습니다.</a>
-<span class="text-gray-400 text-sm shrink-0">03.21</span>
-</li>
-</ul>
-</div>
-<!-- COMMUNITY -->
-<div>
-<div class="flex justify-between items-center mb-6 pb-4 border-b border-gray-200">
-<h3 class="text-xl font-bold text-[#9c948e]">COMMUNITY</h3>
-<button class="text-gray-400 hover:text-gray-600"><span class="material-symbols-outlined text-sm">add</span></button>
-</div>
-<ul class="space-y-4">
-<li class="flex justify-between items-center text-[15px]">
-<a class="text-gray-700 hover:text-[#9c948e] truncate pr-4" href="#">저희 꼬미를 잘 치료해주셔서 너무 감사합니다.</a>
-<span class="text-gray-400 text-sm shrink-0">04.05</span>
-</li>
-<li class="flex justify-between items-center text-[15px]">
-<a class="text-gray-700 hover:text-[#9c948e] truncate pr-4" href="#">다섯살 욱이, 유토펫클리닉에서 수술 잘 마쳤습니다.</a>
-<span class="text-gray-400 text-sm shrink-0">04.02</span>
-</li>
-<li class="flex justify-between items-center text-[15px]">
-<a class="text-gray-700 hover:text-[#9c948e] truncate pr-4" href="#">이은정 원장님을 칭찬합니다!</a>
-<span class="text-gray-400 text-sm shrink-0">04.01</span>
-</li>
-<li class="flex justify-between items-center text-[15px]">
-<a class="text-gray-700 hover:text-[#9c948e] truncate pr-4" href="#">유토펫클리닉 잠실점 방문 후기입니다.</a>
-<span class="text-gray-400 text-sm shrink-0">03.21</span>
-</li>
-</ul>
-</div>
-</div>
-</section>
-<!-- Specialized Features Grid -->
-<section class="w-full">
-<div class="grid grid-cols-1 md:grid-cols-3 h-[400px]">
-<!-- Card 1 -->
-<div class="relative group overflow-hidden flex flex-col justify-center items-center text-center text-white p-8 bg-black/60">
-<img alt="Veterinarian examining cat" class="absolute inset-0 w-full h-full object-cover -z-10 mix-blend-multiply group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALVG97xEXQ-cvylH-Ilbxlkr-mRbuiOrCjY6hnpsU7ei7pPcJxYWVCHEOVi5eXfocj2v7rtYFWMm_oJAlSNljLhqcU1au46sYUCCyv-L1TMKVEyKeFwvXtqbIEZMaAlQE3RDVYRyh16EiuF-YXWoHMCpjGWPDmXzzsKg3jW2n4AHZctMuRF6xWRWt3rxolDH_FWIlPhMiE1-xtn5JbizNK8KuuqY8OAtw9xNlxWBwjnXpRUE7u0fmiTtkgKMns9sUeAM0JM4JFSRkQ">
-<h3 class="text-2xl font-light mb-2">진료분야별</h3>
-<h2 class="text-3xl font-bold mb-6">전문의 시스템</h2>
-<p class="text-sm text-white/80 mb-8 max-w-[280px]">강아지와 고양이, 객관의 의료체계가 필수입니다. 유토펫클리닉은 분야별 전문의 시스템으로 정확하고 확실한 진료안내를 실시합니다.</p>
-<button class="border border-white/40 bg-white/10 backdrop-blur hover:bg-white hover:text-black transition-colors px-8 py-2 rounded-full text-sm">자세히보기</button>
-</div>
-<!-- Card 2 -->
-<div class="relative group overflow-hidden flex flex-col justify-center items-center text-center text-white p-8 bg-black/60">
-<img alt="Veterinarian holding dog" class="absolute inset-0 w-full h-full object-cover -z-10 mix-blend-multiply group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1TEG9Sjpg9YGShfjLsAdj0PHa3j1ApUkasN6qFCqyqJV3sWLgC2_VQD1a7Ru-1kVRXjLR_NXf9Y1Ub1dxmYaQARtWdhXEjObmWtHTp8BSuo7_BHXN0wQ7PzfJuIH-gnHGewCqlm2VdtGyEyWmNmDD4mTzBn0T5a6lDtXpIUmRvKD5OMlWSD7q6BccibA8vhwHjlbmfjQDpkDhh8TlR9vk9M066o4TKrzbJa3bbrxHfNKlfqour9BzPg6IAY95zYd86t2ojlZrPzbo">
-<h3 class="text-2xl font-light mb-2">24시간 운영</h3>
-<h2 class="text-3xl font-bold mb-6">응급진료센터</h2>
-<p class="text-sm text-white/80 mb-8 max-w-[280px]">반려동물의 응급상황을 위한 24시간 응급의료센터를 운영하고 있습니다. 주간과 야간, 반려동물의 진단 및 수술이 가능합니다.</p>
-<button class="border border-white/40 bg-white/10 backdrop-blur hover:bg-white hover:text-black transition-colors px-8 py-2 rounded-full text-sm">자세히보기</button>
-</div>
-<!-- Card 3 -->
-<div class="relative group overflow-hidden flex flex-col justify-center items-center text-center text-white p-8 bg-[#8a7268]/80">
-<img alt="Hands holding dog paws" class="absolute inset-0 w-full h-full object-cover -z-10 mix-blend-multiply group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5N9W8hdIJfe42EFfuU-kaoSlLZ0Y3ixnwMJKgFAZVOlnnMyuGzPxERl99P4uhduDhFa_hRWF_5R-5EK_3CPLj-D4CjSMiFUVtdzuiIBFBbuPOuJw8FmHdZG3AlGtKY9zpqa9jhRp2AZ8qbFD4hOcLIqGmsGIf2WT9cQ91NkR5oJlISQ3e-Yda5S2qHA6qlBKb2386iyxjiiEvk56sMKY1vVqtW0IwQ53YrUswCiLrWL1auNM6clI2xa0oMIUHSwwGDYV8A5GIm4pa">
-<h3 class="text-2xl font-light mb-2">사랑을 바탕으로 한</h3>
-<h2 class="text-3xl font-bold mb-6">진실된 진료</h2>
-<p class="text-sm text-white/80 mb-8 max-w-[280px]">유토펫클리닉 의료진은 반려동물에 대한 사랑을 바탕으로 진심을 다해 진료합니다. 반려동물을 사랑하는 마음을 바탕으로 거듭납니다.</p>
-<button class="border border-white/40 bg-white/10 backdrop-blur hover:bg-white hover:text-[#8a7268] transition-colors px-8 py-2 rounded-full text-sm">자세히보기</button>
-</div>
-</div>
-</section>
-<!-- Review & Video Section -->
-<section class="max-w-[1200px] mx-auto px-4 py-20">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-<!-- Customer Reviews Grid -->
-<div>
-<h3 class="text-xl font-light text-gray-800 mb-1">유토펫클리닉</h3>
-<h2 class="text-3xl font-bold text-gray-900 mb-2">고객님의 생생후기</h2>
-<p class="text-sm text-gray-500 mb-8">사랑하는 반려견을 위한 건강한 선택! 유토펫클리닉을 찾아주신 분들의 생생한 방문후기를 확인하세요.</p>
-<div class="grid grid-cols-3 gap-2"><div class="col-span-3 aspect-video overflow-hidden group"><img alt="Review Grid" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQE_L1t86kmhEKEDDBBz_OHGhjfvgnncnc2h9usvXLCjds-1hXJA3FZz_sUdF2_alnk1rpt0TI8iLDudmYzyZBAGmrwLf6yCC7aF_Chj7VFRFitp8gMn1qRKfDfkLMSfHpQdyq22fVSa0QcZaHwVp06vZPCsemMwoWXj9guOzRh_XoxapNwOqlbzCw-EHrZY7vq4cZPzUyVJubSm84pulo88j2xzcvq7a7snrA_ANcq0ZLI6BVNnXI3P0gfhkyeGHelGvQOcx9lSqc"></div></div>
-</div>
-<!-- Video Testimonial -->
-<div class="relative rounded-lg overflow-hidden h-full min-h-[300px] group cursor-pointer bg-gray-900">
-<img alt="Video thumbnail of smiling woman with white dog" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQE_L1t86kmhEKEDDBBz_OHGhjfvgnncnc2h9usvXLCjds-1hXJA3FZz_sUdF2_alnk1rpt0TI8iLDudmYzyZBAGmrwLf6yCC7aF_Chj7VFRFitp8gMn1qRKfDfkLMSfHpQdyq22fVSa0QcZaHwVp06vZPCsemMwoWXj9guOzRh_XoxapNwOqlbzCw-EHrZY7vq4cZPzUyVJubSm84pulo88j2xzcvq7a7snrA_ANcq0ZLI6BVNnXI3P0gfhkyeGHelGvQOcx9lSqc">
-<div class="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent"></div>
-<div class="absolute inset-0 flex flex-col justify-center p-12">
-<p class="text-white/90 text-lg mb-2">슬개골이 약했던 꼬미,</p>
-<p class="text-white text-3xl font-bold mb-4 leading-tight">유토클리닉에서 수술받고<br>정말 많이 좋아졌어요!</p>
-<p class="text-white/70 text-sm">꼬미보호자 김은영님 인터뷰</p>
-</div>
-<div class="absolute bottom-8 right-8 flex flex-col items-center">
-<div class="w-16 h-16 border-2 border-white rounded-full flex items-center justify-center bg-white/10 backdrop-blur hover:bg-white hover:text-black transition-colors text-white mb-2">
-<span class="material-symbols-outlined text-3xl ml-1">play_arrow</span>
-</div>
-<span class="text-white text-xs font-mono">55:04</span>
-</div>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-white w-full py-12 border-t border-gray-200">
-<div class="max-w-[1200px] mx-auto px-4">
-<!-- Top Links -->
-<div class="flex flex-wrap gap-8 mb-8 pb-8 border-b border-gray-100">
-<a class="text-xs font-bold text-gray-800 hover:text-[#a7b896]" href="#">SITE MAP</a>
-<a class="text-xs font-bold text-gray-800 hover:text-[#a7b896]" href="#">AGREEMENT</a>
-<a class="text-xs font-bold text-gray-800 hover:text-[#a7b896]" href="#">PRIVACY POLICY</a>
-<a class="text-xs font-bold text-gray-800 hover:text-[#a7b896]" href="#">CUSTOMER CENTER</a>
-</div>
-<!-- Bottom Info -->
-<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
-<div class="flex items-start gap-6">
-<span class="font-display-lg text-2xl font-bold text-[#a7b896] tracking-tighter">UTO PET Clinic</span>
-<div class="text-[11px] text-gray-500 leading-relaxed">
-<p>(주)에이치아이 서울특별시 구로구 디지털로26길 61 유토타워 2차 1004호 전화 : 02-1234-5678 팩스 : 02-1234-5678</p>
-<p class="mt-1">COPYRIGHT(C) UTOIMAGE.COM ALL RIGHT RESERVED.</p>
-</div>
-</div>
-<!-- Family Site Select -->
-<div class="relative w-[180px]">
-<select class="w-full appearance-none bg-transparent border border-gray-300 text-gray-600 text-[11px] py-2 px-3 pr-8 rounded-none focus:outline-none focus:border-gray-400">
-<option>FAMILY SITE</option>
-<option>유토이미지</option>
-<option>유토포토</option>
-</select>
-<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-500">
-<span class="material-symbols-outlined text-[16px]">arrow_drop_down</span>
-</div>
-</div>
+<div class="flex flex-wrap gap-4 md:justify-end items-start font-body-md text-body-md">
+<a class="text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Contact Us</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">YouTube Policies</a>
 </div>
 </div>
 </footer>
